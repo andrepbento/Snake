@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:orientation="vertical"
+    tools:context="com.andrebento.activities.MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_about_app"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/snake_logo"
+            android:onClick="onButtonClick"/>
+
+        <ImageView
+            android:id="@+id/iv_settigns"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/settings_logo"
+            android:onClick="onButtonClick"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogar"
+            android:layout_gravity="center"
+            android:onClick="onButtonClick"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_high_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:layout_gravity="center"
+            android:onClick="onButtonClick"/>
+
+    </FrameLayout>
+
+</LinearLayout>

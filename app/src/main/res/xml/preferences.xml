@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="1"
+        android:title="Velocidade"
+        android:entries="@array/velocity"
+        android:entryValues="@array/velocity"
+        android:key="velocityKey" />
+
+</PreferenceScreen>
